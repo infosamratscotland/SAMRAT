@@ -10,249 +10,26 @@
   <link rel="stylesheet" href="style.css1" />
   <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
   <link rel="icon" href="/images/favicon.ico" />
-  <style>
-    /* Create three equal columns that floats next to each other */
-header{
-  position: fixed;
-  width: 100%;
-}
-
-    ft {
-      color: #be3a26;
-      font-family: Consolas, Arial;
-      text-decoration: none;
-      text-align: right;
-      margin: 1px auto 0;
-      padding: 5px;
-      cursor: pointer;
-      margin-left: 1px;
-      margin-right: 10px;
-    }
-
-    .social {
-      float: right;
-      display: inline-flex;
-      justify-content: right;
-      padding: 8px 1px;
-      background: #be3a26;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-
-    .pad {
-      padding: 4px;
-      font-size: medium;
-    }
-
-    .padthick {
-      padding: 10px;
-      font-size: medium;
-      background: linear-gradient(to right, white, #bcbcbb);
-    }
-
-    #footer {
-      position: fixed;
-      bottom: .5px;
-      width: 100%;
-      background-color: #f5f5f5;
-    }
-
-    .logo {
-      filter: grayscale(1);
-      width: 20px;
-      height: 20px;
-    }
-
-    .logo:hover {
-      filter: grayscale(0);
-    }
-
-    .nav-item {
-      margin-left: 10px;
-    }
-
-    .navbar-container {
-      display: flex;
-      align-items: stretch;
-      background-color: #ffffff;
-    }
-
-    .navbar-logo {
-      width: 10%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background-color: #ffffff;
-    }
-
-    .container {
-      margin-top: 0px;
-    }
-
-    .navbar-logo img {
-      max-width: 100%;
-      height: auto;
-      padding: 10px;
-    }
-
-    .navbar-content {
-      width: 90%;
-      display: flex;
-      flex-direction: column;
-    }
-
-    .top-row {
-      display: flex;
-      align-items: center;
-      justify-content: flex-end;
-      padding: 10px;
-      background-color: #ffffff;
-      border-bottom: 1px solid #ffffff;
-    }
-
-    .top-row a {
-      margin-left: 15px;
-      color: #e31e1e;
-      text-decoration: none;
-    }
-
-    .top-row a:hover {
-      color: #007bff;
-    }
-
-    .bottom-row {
-      background-image: linear-gradient(to right,
-          white,
-          rgb(255, 102, 0),
-          rgb(255, 102, 0),
-          rgb(255, 102, 0),
-          rgb(255, 102, 0),
-          rgb(255, 102, 0),
-          rgb(255, 102, 0));
-    }
-
-    .bottom-row .navbar-nav .nav-link {
-      color: #ffffff;
-    }
-
-    .bottom-row .navbar-nav .nav-link:hover {
-      color: #080808;
-    }
-    .column {    
-    width: 45%;
-
-}
-    @media (max-width: 768px) {
-      .column {
-        width: 100%;
-      }
-
-      .navbar-container {
-        flex-direction: column;
-      }
-
-      .navbar-logo {
-        width: 100%;
-        text-align: center;
-      }
-
-      .navbar-content {
-        width: 100%;
-      }
-
-      .container {
-        margin-top: 0px;
-      }
-
-      .bottom-row {
-        background-image: linear-gradient(to right,
-            rgb(255, 102, 0),
-            rgb(255, 102, 0));
-      }
-
-      ft {
-      color: #be3a26;
-      font-size:x-small;
-      text-align: right;
-      margin: 1px auto 0;
-      padding: 1px;
-      cursor: pointer;
-      margin-left: 3px;
-      margin-right: 3px;
-    }
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <header>
-    <div class="navbar-container">
-      <!-- Logo Section -->
-      <div class="navbar-logo">
-        <img src="https://www.samrat.org.uk/gallery_gen/ac3edf97044acaa96a464b2a3f0862c1_202x196_fit.png" alt="Logo"
-          style="max-height: 120px" />
-      </div>
-      <!-- Navigation Content -->
-      <div class="navbar-content">
-        <!-- Top Row: Social Media Links -->
-        <div class="top-row">
-          <a href="#"><img class="logo" src="images/insta.png" alt="Instagram" /></a>
-          <a href="#"><img class="logo" src="images/youtube.png" alt="Youtube" /></a>
-          <a href="#"><img class="logo" src="images/facebook.png" alt="Facebook" /></a>
-          <a href="#"><img class="logo" src="images/X.png" alt="X" /></a>
-        </div>
-        <!-- Bottom Row: Navigation Menu -->
-        <nav class="navbar navbar-expand-lg navbar-dark bottom-row">
-          <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav mx-auto">
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">SAMRAT</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Scottish Ganesh Festival</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button"
-                    data-bs-toggle="dropdown" aria-expanded="false">Get involved</a>
-                  <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
-                    <li><a class="dropdown-item" href="#">Membership</a></li>
-                    <li><a class="dropdown-item" href="#">Sponsorship</a></li>
-                    <li>
-                      <a class="dropdown-item" href="#">Volunteering</a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button"
-                    data-bs-toggle="dropdown" aria-expanded="false">Committee</a>
-                  <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
-                    <li><a class="dropdown-item" href="#">Present</a></li>
-                    <li><a class="dropdown-item" href="#">Past</a></li>
-                  </ul>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Contact</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-      </div>
-    </div>
+    <nav>
+      <div id="nav-placeholder"></div>
+      <script>
+        $(function () {
+          $("#nav-placeholder").load("nav.html");
+        });
+      </script>
+    </nav>
   </header>
 
+  <div class="headerblock"></div>
   <!-- Main Content -->
   <main class="container py-5">
     <div>
-      <h1 class="text-center">SAMRAT</h1>
+      <h1 class="text-center hdr">SAMRAT</h1>
       <div class="row">
         <div class="column">
           <p>
@@ -298,7 +75,7 @@ header{
             Donec lacinia augue velit, viverra tempor neque lobortis vitae. Nulla
             augue massa, pulvinar id sagittis nec, efficitur sit amet est. Sed
             ultricies tellus in ex consectetur ultricies. Aliquam vitae ex eget
-            metus vulputate hendrerit ut ornare elit. 
+            metus vulputate hendrerit ut ornare elit.
           <p>
         </div>
         <div class="column">
@@ -345,7 +122,9 @@ header{
           आंतरकार्यक्षमता करता। विषय परिवहन विश्लेषण बनाकर गटको
           </p>
         </div>
-        <div class="column"></div>
+        <div class="column">
+          <img src="images/image1.jpg" alt="Image" width="50" height="60"/>
+        </div>
       </div>
 
 
