@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SAMRAT - Marathi Mandal Edinburgh</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css1" />
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <link rel="icon" href="/images/favicon.ico" />
+  <style>
+    /* Create three equal columns that floats next to each other */
+header{
+  position: fixed;
+  width: 100%;
+}
+
+    ft {
+      color: #be3a26;
+      font-family: Consolas, Arial;
+      text-decoration: none;
+      text-align: right;
+      margin: 1px auto 0;
+      padding: 5px;
+      cursor: pointer;
+      margin-left: 1px;
+      margin-right: 10px;
+    }
+
+    .social {
+      float: right;
+      display: inline-flex;
+      justify-content: right;
+      padding: 8px 1px;
+      background: #be3a26;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .pad {
+      padding: 4px;
+      font-size: medium;
+    }
+
+    .padthick {
+      padding: 10px;
+      font-size: medium;
+      background: linear-gradient(to right, white, #bcbcbb);
+    }
+
+    #footer {
+      position: fixed;
+      bottom: .5px;
+      width: 100%;
+      background-color: #f5f5f5;
+    }
+
+    .logo {
+      filter: grayscale(1);
+      width: 20px;
+      height: 20px;
+    }
+
+    .logo:hover {
+      filter: grayscale(0);
+    }
+
+    .nav-item {
+      margin-left: 10px;
+    }
+
+    .navbar-container {
+      display: flex;
+      align-items: stretch;
+      background-color: #ffffff;
+    }
+
+    .navbar-logo {
+      width: 10%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #ffffff;
+    }
+
+    .container {
+      margin-top: 0px;
+    }
+
+    .navbar-logo img {
+      max-width: 100%;
+      height: auto;
+      padding: 10px;
+    }
+
+    .navbar-content {
+      width: 90%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .top-row {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding: 10px;
+      background-color: #ffffff;
+      border-bottom: 1px solid #ffffff;
+    }
+
+    .top-row a {
+      margin-left: 15px;
+      color: #e31e1e;
+      text-decoration: none;
+    }
+
+    .top-row a:hover {
+      color: #007bff;
+    }
+
+    .bottom-row {
+      background-image: linear-gradient(to right,
+          white,
+          rgb(255, 102, 0),
+          rgb(255, 102, 0),
+          rgb(255, 102, 0),
+          rgb(255, 102, 0),
+          rgb(255, 102, 0),
+          rgb(255, 102, 0));
+    }
+
+    .bottom-row .navbar-nav .nav-link {
+      color: #ffffff;
+    }
+
+    .bottom-row .navbar-nav .nav-link:hover {
+      color: #080808;
+    }
+    .column {    
+    width: 45%;
+
+}
+    @media (max-width: 768px) {
+      .column {
+        width: 100%;
+      }
+
+      .navbar-container {
+        flex-direction: column;
+      }
+
+      .navbar-logo {
+        width: 100%;
+        text-align: center;
+      }
+
+      .navbar-content {
+        width: 100%;
+      }
+
+      .container {
+        margin-top: 0px;
+      }
+
+      .bottom-row {
+        background-image: linear-gradient(to right,
+            rgb(255, 102, 0),
+            rgb(255, 102, 0));
+      }
+
+      ft {
+      color: #be3a26;
+      font-size:x-small;
+      text-align: right;
+      margin: 1px auto 0;
+      padding: 1px;
+      cursor: pointer;
+      margin-left: 3px;
+      margin-right: 3px;
+    }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="navbar-container">
+      <!-- Logo Section -->
+      <div class="navbar-logo">
+        <img src="https://www.samrat.org.uk/gallery_gen/ac3edf97044acaa96a464b2a3f0862c1_202x196_fit.png" alt="Logo"
+          style="max-height: 120px" />
+      </div>
+      <!-- Navigation Content -->
+      <div class="navbar-content">
+        <!-- Top Row: Social Media Links -->
+        <div class="top-row">
+          <a href="#"><img class="logo" src="images/insta.png" alt="Instagram" /></a>
+          <a href="#"><img class="logo" src="images/youtube.png" alt="Youtube" /></a>
+          <a href="#"><img class="logo" src="images/facebook.png" alt="Facebook" /></a>
+          <a href="#"><img class="logo" src="images/X.png" alt="X" /></a>
+        </div>
+        <!-- Bottom Row: Navigation Menu -->
+        <nav class="navbar navbar-expand-lg navbar-dark bottom-row">
+          <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">SAMRAT</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Scottish Ganesh Festival</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">Get involved</a>
+                  <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                    <li><a class="dropdown-item" href="#">Membership</a></li>
+                    <li><a class="dropdown-item" href="#">Sponsorship</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Volunteering</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">Committee</a>
+                  <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                    <li><a class="dropdown-item" href="#">Present</a></li>
+                    <li><a class="dropdown-item" href="#">Past</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container py-5">
+    <div>
+      <h1 class="text-center">SAMRAT</h1>
+      <div class="row">
+        <div class="column">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
+            condimentum risus dapibus lacus mollis, in convallis erat pulvinar. In
+            scelerisque nibh nec volutpat consectetur. Morbi ullamcorper ut ipsum
+            at rhoncus. Quisque aliquet nulla ut ligula placerat, id euismod
+            libero elementum. Fusce sed hendrerit tortor. Nam tincidunt semper
+            ligula, lacinia vestibulum eros mattis non. Sed elementum laoreet
+            egestas. Cras eu maximus orci. Curabitur maximus nulla vel aliquam
+            elementum. Vivamus nec molestie leo. Phasellus justo lacus, sodales
+            vel commodo in, cursus ut ligula. Interdum et malesuada fames ac ante
+            ipsum primis in faucibus. Duis laoreet nisi ligula, sed sollicitudin
+            mauris euismod in. Nunc pharetra iaculis turpis. Fusce ac eros dui.
+            Praesent massa orci, hendrerit eget posuere in, vulputate non metus.
+            Nulla eleifend commodo tellus a molestie. Donec sit amet felis sed
+            elit varius pharetra. Nunc volutpat massa maximus sapien pulvinar, id
+            efficitur augue luctus. Nunc eleifend ipsum felis, a finibus odio
+            scelerisque in. Etiam et ipsum iaculis, iaculis est eget, cursus
+            nulla. Sed sed nunc suscipit, congue felis feugiat, rhoncus justo.
+            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+            posuere cubilia curae; Nunc eu quam venenatis, mattis nulla sed,
+            dignissim nisi. Duis mattis leo ac lacus suscipit fringilla. Maecenas
+            auctor fringilla risus at venenatis. Proin vel lacus laoreet,
+            tincidunt mauris sit amet, lobortis lacus. Suspendisse erat augue,
+            tristique interdum diam id, gravida porta velit. Phasellus hendrerit,
+            sollicitudin porta. Pellentesque eros enim, maximus in dapibus vitae,
+            commodo et justo. Morbi maximus tortor orci. Lorem ipsum dolor sit
+            amet, consectetur adipiscing elit. Praesent condimentum risus dapibus
+            massa maximus sapien pulvinar, id efficitur augue luctus. Nunc
+            eleifend ipsum felis, a finibus odio scelerisque in. Etiam et ipsum
+            iaculis, iaculis est eget, cursus nulla. Sed sed nunc suscipit, congue
+            felis feugiat, rhoncus justo. Vestibulum ante ipsum primis in faucibus
+            orci luctus et ultrices posuere cubilia curae; Nunc eu quam venenatis,
+            mattis nulla sed, dignissim nisi. Duis mattis leo ac lacus suscipit
+            fringilla. Maecenas auctor fringilla risus at venenatis. Proin vel
+            lacus laoreet, tincidunt mauris sit amet, lobortis lacus. Suspendisse
+            erat augue, tristique interdum diam id, gravida porta velit. Phasellus
+            hendrerit, augue at elementum faucibus, quam elit pulvinar magna, ac
+            hendrerit nisl metus at leo. Aenean ac purus bibendum, varius eros
+            vitae, scelerisque tellus. Sed facilisis varius erat. Aliquam accumsan
+            vehicula enim, id dignissim nulla fermentum ut. Nam vitae est orci.
+            Donec lacinia augue velit, viverra tempor neque lobortis vitae. Nulla
+            augue massa, pulvinar id sagittis nec, efficitur sit amet est. Sed
+            ultricies tellus in ex consectetur ultricies. Aliquam vitae ex eget
+            metus vulputate hendrerit ut ornare elit. 
+          <p>
+        </div>
+        <div class="column">
+          </p>सीमित सकती खयालात आशाआपस
+          परिभाषित उदेश वैश्विक निर्देश खरिदे ।क मुश्किल उपयोगकर्ता बनाने विश्व
+          हमेहो। अंग्रेजी हीकम बदले आवश्यकत संस्थान सार्वजनिक बाटते विश्व उनके
+          समस्याए विश्वव्यापि हिंदी एछित पहोचने स्वतंत्र सकती हिंदी विकसित
+          समस्याओ खरिदे दिशामे केन्द्रित अधिक होभर सारांश तकरीबन बातसमय करता।
+          उनके सदस्य उपलब्ध परिवहन भोगोलिक सेऔर उन्हे आवश्यक व्रुद्धि पुस्तक
+          मेंभटृ विश्व आजपर रहारुप भेदनक्षमता उदेश जिसकी लक्षण जनित वर्णित
+          अर्थपुर्ण दिये आशाआपस पहोचाना विश्लेषण संसाध प्राण आधुनिक व्याख्या
+          सहित अत्यंत भोगोलिक बीसबतेबोध अपने कराना उसीएक् बिन्दुओ बारे विभाग
+          बनाकर करके पुस्तक यन्त्रालय स्वतंत्रता संसाध जिवन एसेएवं जानकारी
+          प्राधिकरन प्राण अनुवाद सम्पर्क बीसबतेबोध भाषए शारिरिक अधिकांश प्रतिबध
+          सुना सादगि हैं। संदेश विनिमय विचारशिलता पुष्टिकर्ता दिये कराना है।अभी
+          वैश्विक सेऔर आवश्यकत वार्तालाप देखने कोहम उसीएक् आंतरजाल मुख्यतह होसके
+          ब्रौशर अर्थपुर्ण जोवे उन्हे वर्णित मार्गदर्शन बढाता उसके बाटते ७हल
+          सारांश विभाजन विभाजनक्षमता जिसकी सुना भारतीय संस्थान अविरोधता शुरुआत
+          भोगोलिक बिन्दुओमे संदेश भाति प्रति प्रदान वेबजाल साधन डाले। अधिक
+          पासपाई व्याख्या पुष्टिकर्ता दिये किएलोग विचरविमर्श हमारि बनाना सोफ़तवेर
+          कार्यकर्ता सकती बनाति उनको रहारुप प्रौध्योगिकी पेदा सादगि जागरुक
+          हुआआदी अर्थपुर्ण जैसी कुशलता निर्माण निरपेक्ष विकास खयालात बातसमय
+          सोफ़्टवेर समाज मजबुत प्रति उपेक्ष वर्तमान विकासक्षमता लगती होभर सारांश
+          प्रसारन व्याख्या बलवान अधिकार यन्त्रालय ढांचा किया सुस्पश्ट
+          पुष्टिकर्ता बदले ध्वनि बनाने कलइस विभाजन कम्प्युटर रखति मुक्त सामूहिक
+          प्राधिकरन सहयोग नाकर किएलोग पुर्णता वर्णित कार्यसिधान्तो एछित दौरान
+          केन्द्रिय प्रोत्साहित जाएन बलवान बिना निर्माण अन्तरराष्ट्रीयकरन प्रति
+          विकास भीयह आशाआपस विनिमय बिन्दुओमे उनको लक्षण गयेगया दर्शाता प्राथमिक
+          स्वतंत्र हार्डवेर पुर्व सेऔर जिसकी अपनि जिम्मे क्षमता सुस्पश्ट करता।
+          तकनिकल अन्तरराष्ट्रीयकरन सके। मानव विश्व गटकउसि परिभाषित देकर शुरुआत
+          दर्शाता अमितकुमार प्राण मजबुत सकता सभीकुछ मुख्यतह विकेन्द्रित सेऔर
+          रहारुप हार्डवेर अर्थपुर्ण पहोच। प्रति करते जिम्मे दोषसके कार्य है।अभी
+          विश्लेषण सुस्पश्ट हैं। ढांचा रचना क्षमता पत्रिका समस्याए डाले। खयालात
+          आवश्यकत प्रसारन कारन क्षमता बातसमय प्राथमिक चाहे पुर्व करता। नाकर
+          सभिसमज व्याख्या खयालात उद्योग विकसित थातक करता। ध्येय समाज सहायता
+          सुस्पश्ट मुश्किले तरीके एछित ब्रौशर तकरीबन करता। है।अभी दोषसके
+          करके(विशेष उसके ७हल सारांश निर्देश उपलब्धता लक्षण जाएन वर्णित सभीकुछ
+          वैश्विक डाले। वर्ष डाले। खयालात दस्तावेज कीसे विश्व हुएआदि निर्माण
+          ढांचामात्रुभाषा बलवान हैं। आवश्यक तकरीबन होने चिदंश स्थिति लक्ष्य
+          वेबजाल कैसे नवंबर ऎसाजीस वैश्विक ब्रौशर परस्पर सम्पर्क कीसे बाजार जनित
+          कुशलता परिभाषित उन्हे ऎसाजीस स्वतंत्र पुर्व जोवे आपको शीघ्र संस्थान
+          गोपनीयता कम्प्युटर बनाकर दोषसके विज्ञान सुस्पश्ट उनको नवंबर संस्क्रुति
+          प्रौध्योगिकी समाज बनाना देते जानकारी विभाजनक्षमता स्थिति
+          आंतरकार्यक्षमता करता। विषय परिवहन विश्लेषण बनाकर गटको
+          </p>
+        </div>
+        <div class="column"></div>
+      </div>
+
+
+
+
+    </div>
+  </main>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+<ftr>
+  <div id="footer-placeholder"></div>
+  <script>
+    $(function () {
+      $("#footer-placeholder").load("footer.html");
+    });
+  </script>
+</ftr>
+
+</html>
