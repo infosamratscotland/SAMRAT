@@ -11,7 +11,7 @@ width: 100%;
   border: 5px solid #be3a26;
   padding: 2px;
   margin: 5px;
-  width: 100%;
+  max-width:inherit;
 }
 
 ft {
