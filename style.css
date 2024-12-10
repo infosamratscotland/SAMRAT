@@ -7,6 +7,13 @@ width: 100%;
   color: #be3a26;
 }
 
+.thmbnail{
+  border: 5px solid #be3a26;
+  padding: 2px;
+  margin: 5px;
+  width: 100%;
+}
+
 ft {
   color: #be3a26;
   font-family: Consolas, Arial;
@@ -18,6 +25,7 @@ ft {
   margin-left: 1px;
   margin-right: 10px;
 }
+
 
 .social {
   float: right;
