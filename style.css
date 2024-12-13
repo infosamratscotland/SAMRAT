@@ -1,3 +1,89 @@
+.table_component {
+  overflow: auto;
+  width: 100%;
+}
+
+.table_component table {
+  border: 1px solid #d5d4d2;
+  height: 100%;
+  width: 100%;
+
+  border-collapse: collapse;
+  border-spacing: 1px;
+  text-align: left;
+}
+
+.table_component caption {
+  caption-side: top;
+  text-align: left;
+}
+
+.table_component th {
+  border: 1px solid #d5d4d2;
+  background-color: #eceff1;
+  color: #000000;
+  padding: 5px;
+}
+
+.table_component td {
+  border: 1px solid #d5d4d2;
+  padding: 5px;
+}
+
+.table_component tr:nth-child(even) td {
+  background-color: #e1e1e1;
+  color: #000000;
+}
+
+.table_component tr:nth-child(odd) td {
+  background-color: #f5ecec;
+  color: #000000;
+}
+
+.collapsible {
+  background-color: #f1f1f1;
+  color: #333;
+  cursor: pointer;
+  padding: 15px;
+  text-align: left;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  border-radius: 5px;
+  margin-top: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.collapsible:hover {
+  background-color: #ddd;
+}
+
+.collapsible:after {
+  content: "\002B"; /* Plus symbol */
+  font-size: 20px;
+  float: right;
+  margin-left: 10px;
+}
+
+.collapsible.active:after {
+  content: "\2212"; /* Minus symbol */
+}
+
+.colcontent {
+  padding: 0 15px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  background-color: #fafafa;
+  border: 1px solid #be3a26;
+  border-radius: 5px;
+  margin-top: 0px;
+}
+
+.colcontent p {
+  margin: 15px 0;
+}
+
 header{
 position: fixed;
 width: 100%;
